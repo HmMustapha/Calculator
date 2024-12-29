@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4B0082;
+}
+
+.calculator-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #D8BFD8;
+    margin: 20px 0;
+}
+
+.headbar {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: #1d1160;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #E6E6FA;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output {
+    width: 100%;
+    max-width: 300px;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #E6E6FA;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #e0e0e0;
+    color: #333;
+    border: 2px solid #bbb;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px #bbb;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: #d6d6d6;
+}
+
+.buttons button:active {
+    box-shadow: 0 2px #bbb;
+    transform: translateY(2px);
+}
+
+.buttons .opbut{
+    background-color: orange;
+}
+.buttons .Result-But{
+    background-color: lime;
+}
+
+#Reset-Button{
+    background-color: #333;
+    color: white;
+}
+.Footer {
+    background-color: #1d1160;
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+.Footer p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .buttons button {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .calculator-title {
+        font-size: 2rem;
+    }
+}
